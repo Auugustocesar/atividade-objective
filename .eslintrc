@@ -1,0 +1,41 @@
+{
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier", "react-hooks"],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/prop-types": 0,
+    "no-underscore-dangle": 0,
+    "import/imports-first": ["error", "absolute-first"],
+    "import/newline-after-import": "error",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/interactive-supports-focus": "off",
+    "import/prefer-default-export": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/no-autofocus": "off",
+    "jsx-a11y/anchor-has-content": "off",
+    "comma-dangle": ["error", "only-multiline"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "globals": {
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "FormData": true,
+    "FileReader": true,
+    "Blob": true,
+    "navigator": true,
+    "Headers": true,
+    "alert": true,
+    "atob": true,
+    "fetch": true
+  },
+  "parser": "babel-eslint"
+}
